@@ -8,4 +8,6 @@ import com.appsdeveloper.photoapp.api.users.data.UserEntity;
 @Repository
 public interface UsersRepositorty extends CrudRepository<UserEntity, Long> {
 
+	UserEntity findByEmail(String email);
+
 }
